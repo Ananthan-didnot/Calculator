@@ -65,6 +65,7 @@ button:active{
 }
 .operator{
     background-color: rgb(251, 155, 0);
+    border-radius: 30%;
 }
 .operator:hover{
     background-color: rgb(251, 155, 0 , 85%);
