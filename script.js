@@ -34,17 +34,13 @@ function del(){
 document.addEventListener("keydown" , function(event){
     const key = event.key;
 
-    if(key>=0 && key<=9 ||  key ==='-' || key ==='+'||key ==='%'){
+    if(key>=0 && key<=9 || key === '*'|| key === '/'|| key ==='-' || key ==='+'||key ==='%'){
         if(resultShown){
             display.value = '';
             resultShown = false;
         }
         showInDisplay(key)
     }
-    else if (key === '*') {
-        showInDisplay('×');}
-    else if (key === '/') {
-        showInDisplay('÷');}
 
     if(key === 'Enter'){
         calculate();
